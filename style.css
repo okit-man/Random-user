@@ -73,11 +73,7 @@ img {
     justify-content: center;
     gap: 0.5rem;
 }
-.value-list {
-    /* color: #44a9e5; */
-    /* background-color: red; */
-    /* border: transparent; */
-}
+
 .icon {
     background: transparent;
     border: transparent;
@@ -112,3 +108,13 @@ img {
     transition: all 1s linear;
 }
 
+
+
+@media screen and (max-width: 786px) {
+    .container {
+        width: 150vh;
+    }
+    .icon {
+        font-size: 1.5rem;
+    }
+}
