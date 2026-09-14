@@ -77,7 +77,7 @@ img {
 .icon {
     background: transparent;
     border: transparent;
-    color: #44a9e5;
+    /* color: #44a9e5; */
     font-size: 1.8rem;
 }
 .icon:hover {
