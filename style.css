@@ -14,9 +14,10 @@ body {
 .block {
       min-height: 50vh;
 }
+/* main container */
 .container {
-    width: 90vh;
-    /* max-width: 730px; */
+    width: 90%;
+    max-width: 730px;
     margin: 0 auto;
     background-color: #fff;
     margin-top: -200px;
@@ -26,6 +27,7 @@ body {
     border-radius: 0.6rem;
     box-shadow:  0 5px 15px rgba(0, 0, 0, 0.2);
 }
+/* top background section */
 .container ::after {
     content: "";
     position: absolute;
@@ -37,7 +39,9 @@ body {
     border-top-left-radius: 0.6rem;
     border-top-right-radius: 0.6rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    z-index: 0;
 }
+/* profile image */
 .container img {
     width:  150px;
     height: 150px;
@@ -45,13 +49,14 @@ body {
     padding: 5px;
     border-radius: 50%;
     background-color: #fff;
-    border: 1 solid rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     margin-bottom: 2.5rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-img {
     z-index: 1;
 }
+img {
+}
+/* text */
 .user-title {
     font-size: 1.2rem;
     font-weight: lighter;
@@ -68,18 +73,22 @@ img {
     letter-spacing: 0.08rem;
     margin-bottom: 1.8rem;
 }
+/* icon */
 .value-list {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     justify-content: center;
     gap: 0.5rem;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .icon {
     background: transparent;
     border: transparent;
-    /* color: #44a9e5; */
     font-size: 1.8rem;
+    cursor: pointer;
 }
 .icon:hover {
     color: #44a9e5;
@@ -87,6 +96,7 @@ img {
 .active {
     color: #44a9e5;
 }
+/* button */
 .btn {
     text-transform: capitalize;
     padding: 6px 13px;
@@ -111,15 +121,114 @@ img {
 }
 
 
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1024px) {
     .container {
-        width: 120vh;
+        width: 85%;
+        max-width: 700px;
+        margin-top: -160px;
+        padding: 1.5rem;
+        background-color: #44a9e5;
+    }
+    .container::after {
+        height: 120px;
+    }
+    .container img {
+        width: 140px;
+        height: 140px;
+        margin-bottom: 2rem;
+    }
+    .user-title {
+        font-size: 1.1rem;
+    }
+    .user-description {
+        font-size: 1.8rem;
+    }
+    .value-list {
+        max-width: 450px;
+        gap: 0.7rem;
+    }
+    .icon {
+        font-size: 1.6rem;
+    }
+    .btn {
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .block {
+        min-height: 40vh;
+}
+    .container {
+        background-color: red;
+        width: 90%;
+        margin-top: -160px;
+        padding: 1.3rem;
+    }
+    .container::after {
+        height: 110px;
+    }
+    .container img {
+        width: 130px;
+        height: 130px;
+        margin-bottom: 1.8rem;
+    }
+    .user-title {
+        font-size: 1rem;
+    }
+    .user-description {
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+    .value-list {
+        /* grid-template-columns: repeat(6, 1fr); */
+        gap: 0.4rem;
     }
     .icon {
         font-size: 1.5rem;
     }
+    .btn {
+        font-size: 1rem;
+        letter-spacing: 0.26rem;
+        padding: 7px 15px;
+    } 
+}
+
+@media screen and (max-width: 480px) {
+    .block {
+        min-height: 50vh;
+    }
+    .container {
+        background-color: green;
+        width: 94%;
+        margin-top: -170px;
+        padding: 1rem;
+    }
+    .container::after {
+        height: 140px;
+    }
+    .container img {
+        width: 120px;
+        height: 120px;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+    }
+    .user-title {
+        font-size: 0.95rem;
+    }
     .user-description {
-         font-size: 1.4rem;
+        font-size: 1.3rem;
+        margin-bottom: 1.3rem;
+    }
+    .value-list {
+        gap: 0.3rem;
+    }
+    .icon {
+        font-size: 1.3rem;
+    }
+    .btn {
+        font-size: 0.9rem;
+        letter-spacing: 0.20rem;
+        padding: 7px 12px;
+        margin-top: 1.4rem;
     }
 }
