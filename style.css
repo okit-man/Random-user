@@ -127,7 +127,6 @@ img {
         max-width: 700px;
         margin-top: -160px;
         padding: 1.5rem;
-        background-color: #44a9e5;
     }
     .container::after {
         height: 120px;
@@ -159,7 +158,6 @@ img {
         min-height: 40vh;
 }
     .container {
-        background-color: red;
         width: 90%;
         margin-top: -160px;
         padding: 1.3rem;
@@ -198,37 +196,63 @@ img {
         min-height: 50vh;
     }
     .container {
-        background-color: green;
-        width: 94%;
-        margin-top: -170px;
+        width: 93%;
+        margin-top: -180px;
         padding: 1rem;
     }
     .container::after {
         height: 140px;
     }
     .container img {
-        width: 120px;
-        height: 120px;
+        width: 130px;
+        height: 130px;
         margin-top: 3rem;
         margin-bottom: 1.5rem;
     }
     .user-title {
-        font-size: 0.95rem;
+        font-size: 1rem;
     }
     .user-description {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         margin-bottom: 1.3rem;
     }
     .value-list {
-        gap: 0.3rem;
+        gap: 0.2rem;
     }
     .icon {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
     .btn {
-        font-size: 0.9rem;
-        letter-spacing: 0.20rem;
-        padding: 7px 12px;
+        font-size: 1rem;
+        letter-spacing: 0.25rem;
+        padding: 8px 13px;
         margin-top: 1.4rem;
+    }
+}
+@media screen and (max-width: 360px) {
+    .container {
+        width: 90%;
+        margin-top: -190px;
+        padding: 0.8rem;
+    }
+    .container img {
+        width: 125px;
+        height: 125px;
+        margin-bottom: 1.2rem;
+    }
+      .user-title {
+        font-size: 0.9rem;
+    }
+    .user-title {
+        font-size: 1rem;
+    }
+    .value-list {
+        gap: 0.1rem;
+    }
+    .icon {
+        font-size: 1.1rem;
+    }
+    .btn {
+        padding: 7px 12px;
     }
 }
