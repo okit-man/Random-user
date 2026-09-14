@@ -58,14 +58,15 @@ img {
     letter-spacing: 0.07rem;
     color: #717c9b;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.7rem;
 }
 .user-description {
     color: #112b3f;
     text-transform: lowercase;
-    font-size: 2.1rem;
+    font-size: 2rem;
+    font-weight: 500px;
     letter-spacing: 0.08rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.8rem;
 }
 .value-list {
     display: grid;
@@ -98,7 +99,8 @@ img {
     letter-spacing: 0.4rem;
     font-size: 1.2rem;
     margin: auto;
-    margin-top: 1.2rem;
+    margin-top: 1.4rem;
+    margin-bottom: 1rem;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.2);
 }
@@ -110,11 +112,14 @@ img {
 
 
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 480px) {
     .container {
         width: 150vh;
     }
     .icon {
         font-size: 1.5rem;
+    }
+    .user-description {
+         font-size: 1.4rem;
     }
 }
