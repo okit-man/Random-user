@@ -16,7 +16,7 @@ body {
 }
 .container {
     width: 90vh;
-    max-width: 730px;
+    /* max-width: 730px; */
     margin: 0 auto;
     background-color: #fff;
     margin-top: -200px;
@@ -114,7 +114,7 @@ img {
 
 @media screen and (max-width: 480px) {
     .container {
-        width: 150vh;
+        width: 120vh;
     }
     .icon {
         font-size: 1.5rem;
